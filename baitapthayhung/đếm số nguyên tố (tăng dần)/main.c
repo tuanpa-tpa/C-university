@@ -1,12 +1,12 @@
 #include <stdio.h>
-int main(int argc, const char * argv[]) {
+int main() {
     int n,a = 0;
     int check[10000];
     int nhap[10000];
     int dem[10000];
+    scanf("%d",&n);
     for (int i = 0; i< n;i++)
         dem[i] = 0;
-    scanf("%d",&n);
     check[0] = 1;
     check[1] = 1;
     for (int i = 1; i<=n ;i++)
@@ -23,8 +23,11 @@ int main(int argc, const char * argv[]) {
             dem[nhap[i]]++;
             a++;
         }
-    for (int i = 1;i <= a;i++)
-        if (dem[i] != 0)
+    int tam;
+    for (int i = 1;i <= n;i++)
+        if (dem[i] != 0){
             printf("%d %d \n",i,dem[i]);
+            if (tam == a) break;
+        }
     return 0;
 }
