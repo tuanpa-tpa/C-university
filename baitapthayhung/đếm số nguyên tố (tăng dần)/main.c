@@ -1,33 +1,67 @@
 #include <stdio.h>
-int main() {
-    int n,a = 0;
-    int check[10000];
-    int nhap[10000];
-    int dem[10000];
+#include <math.h>
+
+void quicksort(int dau, int cuoi, long mang[]);
+void swap(long* a, long* b);
+int kt(int n);
+
+int main()
+{
+    long nhap[100];
+    int n;
     scanf("%d",&n);
-    for (int i = 0; i< n;i++)
-        dem[i] = 0;
-    check[0] = 1;
-    check[1] = 1;
-    for (int i = 1; i<=n ;i++)
-        scanf("%d",&nhap[i]);
-    for (int i = 2;i < n ; i++)
-        if (check[i] != 1) {
-            for (int j = i*2; j < 10000; j +=i) {
-                check[j] = 1;
-            };
-        };
-    for (int i = 1 ; i <= n ; i++)
-        if (check[nhap[i]] != 1)
-        {
-            dem[nhap[i]]++;
-            a++;
-        }
-    int tam;
-    for (int i = 1;i <= n;i++)
-        if (dem[i] != 0){
-            printf("%d %d \n",i,dem[i]);
-            if (tam == a) break;
-        }
+        for (int i = 1; i <= n ;i++)
+            scanf("%ld",&nhap[i]);
+    quicksort(1,n,nhap);
+    int i =1;
+    while (i <= n)
+    {
+        if (kt(nhap[i])) 
+            {
+                int dem = 1;
+                printf("%ld ",nhap[i]);
+                for (int j = i+1; j<= n; j++ )
+                    if (nhap[i] == nhap[j])
+                        {
+                            dem++;
+                            i++;
+                        }
+                printf("%d\n",dem);
+            }
+        i++;
+    }
     return 0;
+}
+void quicksort(int dau, int cuoi, long mang[])
+{
+    long mid = mang[(dau + cuoi)/2];
+    int i = dau;
+    int j = cuoi;
+    do
+    {
+        while (mid > mang[i]) i++;
+        while (mid < mang[j]) j--;
+        if (i <= j)
+            {
+                swap(&mang[i],&mang[j]);
+                i++; j--;
+            }
+    } while (i <= j);
+    if (dau < j)
+        quicksort(dau,j,mang);
+    if (i < cuoi)
+    quicksort(i,cuoi,mang);
+}
+void swap(long* a, long* b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+int kt(int n)
+{
+    if (n < 2) return 0;
+    for (int i = 2; i <= sqrt(n) ;i++)
+        if (n % i == 0) return 0;
+    return 1;
 }
