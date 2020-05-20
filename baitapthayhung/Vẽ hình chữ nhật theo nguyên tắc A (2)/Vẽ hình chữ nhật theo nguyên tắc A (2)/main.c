@@ -1,0 +1,60 @@
+//Viết chương trình C cho phép nhập vào số hàng và số cột của hình chữ nhât. Thực hiện in ra hình chữ nhật theo nguyên tắc tương ứng.
+//INTPUT
+//5 5
+//OUTPUT
+//55555
+//44445
+//33345
+//22345
+//12345
+//Hoặc
+//INPUT
+//4 6
+//OUTPUT
+//666666
+//555556
+//444456
+//333456
+//Hoặc
+//INPUT
+//6 4
+//OUTPUT
+//6666
+//5556
+//4456
+//3456
+//3456
+//3456
+//  main.c
+//  Vẽ hình chữ nhật theo nguyên tắc A (2)
+//
+//  Created by PAT on 5/6/20.
+//  Copyright © 2020 PAT. All rights reserved.
+//
+
+#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    int hang,cot,max,mang[100],index = 0;
+    scanf("%d %d",&hang,&cot);
+    if (hang > cot) max = hang; else max =cot;
+    int max1 = max;
+    if (hang == cot) max1++;
+    for (int i =1; i<= max; i++)
+        mang[i] = i;
+    for (int i = 1; i <= hang; i++){
+        for (int j = 1; j<= cot-index; j++){
+            printf("%d",mang[max - index]);
+        }
+        int temp = index;
+        while ((temp > 0))
+        {
+            if (temp <= max1-2)
+                printf("%d",mang[max - temp+1]);
+            temp--;
+        }
+        index++;
+        printf("\n");
+    }
+    return 0;
+}
