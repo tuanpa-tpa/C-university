@@ -17,7 +17,29 @@
 
 #include <stdio.h>
 #define pt 200
+
 int main(int argc, const char * argv[]) {
-    int n,mang[pt][pt];
+    int n,mang[pt][pt],tam = 0;
+    scanf("%d",&n);
+    for (int i = 0; i< n;i++){
+        for (int j = 0;j < n; j++){
+            scanf("%d",&mang[i][j]);
+        }
+    }
+    int min = 99999;
+    for (int i = 0; i< n;i++){
+        int t = 0;
+        for (int j = 0;j < n; j++){
+            t += mang[j][i];
+        }
+        if (t < min) {
+            tam = i;
+            min = t;
+        }
+    }
+    printf("%d\n",tam+1);
+    for (int i = 0; i < n; i++ ){
+        printf("%d ",mang[i][tam]);
+    }
     return 0;
 }

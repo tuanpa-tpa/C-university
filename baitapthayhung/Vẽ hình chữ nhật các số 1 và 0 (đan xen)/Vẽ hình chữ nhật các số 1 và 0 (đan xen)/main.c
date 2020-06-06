@@ -10,20 +10,28 @@
 //  main.c
 //  Vẽ hình chữ nhật các số 1 và 0 (đan xen)
 //
-//  Created by PAT on 5/6/20.
+//  Created by PAT on 6/5/20.
 //  Copyright © 2020 PAT. All rights reserved.
 //
 
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    int hang,cot,temp = 1;
+    int hang,cot;
     scanf("%d %d",&hang,&cot);
-    for (int i = 1; i<= hang; i++){
-        for (int j = 1; j<= cot; j++){
-            if (temp == 1) printf("1");
-            else printf("0");
-            temp = !temp;
+    int d1 = 1,d2 = 0;
+    for (int i = 0; i< hang; i++){
+        for (int j = 0; j< cot; j++){
+            if (j % 2 != 0)
+                printf("%d",d2);
+            else printf("%d",d1);
+        }
+        if (i % 2 == 0) {
+            d1--;
+            d2++;
+        } else {
+            d1++;
+            d2--;
         }
         printf("\n");
     }

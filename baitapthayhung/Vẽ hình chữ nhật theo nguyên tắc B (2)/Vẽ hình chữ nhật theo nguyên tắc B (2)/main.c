@@ -40,10 +40,9 @@ int main(int argc, const char * argv[]) {
     for (int i= 1; i<= hang; i++){
         for (int j = 1; j<= cot; j++){
             if (i == 1) mang[i][j] = dem++;
-            else
-            if (mang[i-1][j] +1 <= 4) {
+            else if (mang[i-1][j] +1 <= cot) {
                 mang[i][j] = mang[i-1][j] + 1;
-            } else mang[i][j] = 4;
+            } else mang[i][j] = cot;
         }
     }
     for (int i= hang; i >= 1; i--){

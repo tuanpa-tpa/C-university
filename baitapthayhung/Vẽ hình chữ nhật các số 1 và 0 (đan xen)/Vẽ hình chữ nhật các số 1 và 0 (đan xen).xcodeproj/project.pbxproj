@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37C60CC52462A5D800123104 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C60CC42462A5D800123104 /* main.c */; };
+		22AFDDA8248A0A240042DEA7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22AFDDA7248A0A240042DEA7 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37C60CBF2462A5D800123104 /* CopyFiles */ = {
+		22AFDDA2248A0A240042DEA7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37C60CC12462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Vẽ hình chữ nhật các số 1 và 0 (đan xen)"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37C60CC42462A5D800123104 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		22AFDDA4248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Vẽ hình chữ nhật các số 1 và 0 (đan xen)"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22AFDDA7248A0A240042DEA7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37C60CBE2462A5D800123104 /* Frameworks */ = {
+		22AFDDA1248A0A240042DEA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37C60CB82462A5D800123104 = {
+		22AFDD9B248A0A240042DEA7 = {
 			isa = PBXGroup;
 			children = (
-				37C60CC32462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */,
-				37C60CC22462A5D800123104 /* Products */,
+				22AFDDA6248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */,
+				22AFDDA5248A0A240042DEA7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		37C60CC22462A5D800123104 /* Products */ = {
+		22AFDDA5248A0A240042DEA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37C60CC12462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */,
+				22AFDDA4248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37C60CC32462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */ = {
+		22AFDDA6248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */ = {
 			isa = PBXGroup;
 			children = (
-				37C60CC42462A5D800123104 /* main.c */,
+				22AFDDA7248A0A240042DEA7 /* main.c */,
 			);
 			path = "Vẽ hình chữ nhật các số 1 và 0 (đan xen)";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37C60CC02462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */ = {
+		22AFDDA3248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C60CC82462A5D900123104 /* Build configuration list for PBXNativeTarget "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */;
+			buildConfigurationList = 22AFDDAB248A0A240042DEA7 /* Build configuration list for PBXNativeTarget "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */;
 			buildPhases = (
-				37C60CBD2462A5D800123104 /* Sources */,
-				37C60CBE2462A5D800123104 /* Frameworks */,
-				37C60CBF2462A5D800123104 /* CopyFiles */,
+				22AFDDA0248A0A240042DEA7 /* Sources */,
+				22AFDDA1248A0A240042DEA7 /* Frameworks */,
+				22AFDDA2248A0A240042DEA7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = "Vẽ hình chữ nhật các số 1 và 0 (đan xen)";
 			productName = "Vẽ hình chữ nhật các số 1 và 0 (đan xen)";
-			productReference = 37C60CC12462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */;
+			productReference = 22AFDDA4248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		37C60CB92462A5D800123104 /* Project object */ = {
+		22AFDD9C248A0A240042DEA7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = PAT;
 				TargetAttributes = {
-					37C60CC02462A5D800123104 = {
-						CreatedOnToolsVersion = 11.4.1;
+					22AFDDA3248A0A240042DEA7 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 37C60CBC2462A5D800123104 /* Build configuration list for PBXProject "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */;
+			buildConfigurationList = 22AFDD9F248A0A240042DEA7 /* Build configuration list for PBXProject "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 37C60CB82462A5D800123104;
-			productRefGroup = 37C60CC22462A5D800123104 /* Products */;
+			mainGroup = 22AFDD9B248A0A240042DEA7;
+			productRefGroup = 22AFDDA5248A0A240042DEA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37C60CC02462A5D800123104 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */,
+				22AFDDA3248A0A240042DEA7 /* Vẽ hình chữ nhật các số 1 và 0 (đan xen) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37C60CBD2462A5D800123104 /* Sources */ = {
+		22AFDDA0248A0A240042DEA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C60CC52462A5D800123104 /* main.c in Sources */,
+				22AFDDA8248A0A240042DEA7 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		37C60CC62462A5D900123104 /* Debug */ = {
+		22AFDDA9248A0A240042DEA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		37C60CC72462A5D900123104 /* Release */ = {
+		22AFDDAA248A0A240042DEA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		37C60CC92462A5D900123104 /* Debug */ = {
+		22AFDDAC248A0A240042DEA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		37C60CCA2462A5D900123104 /* Release */ = {
+		22AFDDAD248A0A240042DEA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37C60CBC2462A5D800123104 /* Build configuration list for PBXProject "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */ = {
+		22AFDD9F248A0A240042DEA7 /* Build configuration list for PBXProject "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37C60CC62462A5D900123104 /* Debug */,
-				37C60CC72462A5D900123104 /* Release */,
+				22AFDDA9248A0A240042DEA7 /* Debug */,
+				22AFDDAA248A0A240042DEA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C60CC82462A5D900123104 /* Build configuration list for PBXNativeTarget "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */ = {
+		22AFDDAB248A0A240042DEA7 /* Build configuration list for PBXNativeTarget "Vẽ hình chữ nhật các số 1 và 0 (đan xen)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37C60CC92462A5D900123104 /* Debug */,
-				37C60CCA2462A5D900123104 /* Release */,
+				22AFDDAC248A0A240042DEA7 /* Debug */,
+				22AFDDAD248A0A240042DEA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 37C60CB92462A5D800123104 /* Project object */;
+	rootObject = 22AFDD9C248A0A240042DEA7 /* Project object */;
 }

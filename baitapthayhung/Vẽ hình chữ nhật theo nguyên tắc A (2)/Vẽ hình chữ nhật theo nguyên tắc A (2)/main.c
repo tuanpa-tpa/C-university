@@ -35,25 +35,24 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    int hang,cot,max,mang[100],index = 0;
+    int hang,cot,max,mang[100][100];
     scanf("%d %d",&hang,&cot);
     if (hang > cot) max = hang; else max =cot;
-    int max1 = max;
-    if (hang == cot) max1++;
-    for (int i =1; i<= max; i++)
-        mang[i] = i;
-    for (int i = 1; i <= hang; i++){
-        for (int j = 1; j<= cot-index; j++){
-            printf("%d",mang[max - index]);
+    for (int i = 0; i< cot; i++){
+        mang[0][i] = max;
+    }
+    for (int i = 1; i< hang; i++){
+        for (int j = 0; j< cot - i; j++){
+            mang[i][j] = mang[i-1][j] -1;
         }
-        int temp = index;
-        while ((temp > 0))
-        {
-            if (temp <= max1-2)
-                printf("%d",mang[max - temp+1]);
-            temp--;
+        for (int j = cot -i; j< cot; j++){
+            mang[i][j] = mang[i-1][j];
         }
-        index++;
+    }
+    for (int i = 0; i< hang; i++){
+        for (int j = 0; j< cot; j++){
+            printf("%d",mang[i][j]);
+        }
         printf("\n");
     }
     return 0;
